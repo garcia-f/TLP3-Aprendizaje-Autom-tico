@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>TLP3-Aprendizaje Automático-Actividad 3</h1>
+    <form id="formMatrices"> 
+        <div class="input-container">
+
+            <div class="input-filas">
+                <label for="filas">Ingresa número de filas</label>
+                <input type="number" name="filas" id="filas" required>
+            </div>
+    
+            <br>
+    
+            <div class="input-columnas">
+                <label for="columnas">Ingresa número de columnas</label>
+                <input type="number" name="columnas" id="columnas" required>
+            </div>
+
+        </div>
+        
+        <br>
+        <div>
+            <button type="button" id="crearMatrizBtn" onclick="crearMatriz()">
+                Crear matrices
+            </button>
+        </div>
+
+        <h3>Matriz 1</h3>
+        <div id="matriz1"></div>
+
+        <h3>Matriz 2</h3>
+        <div id="matriz2"></div>
+
+        <br>
+        <button type="button" onclick="enviarMatrices()">Sumar Matrices</button>
+
+        <br>
+        <h3>Resultado</h3>
+        <div id="resultado"></div>
+    </form>
+
+    <script src="matris.js"></script>
+</body>
+</html>
